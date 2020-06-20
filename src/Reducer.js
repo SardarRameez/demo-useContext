@@ -5,6 +5,8 @@ const numReducer=(state,action)=>{
             return state+=1;
         case "decrement":
             return state-=1;
+        default:
+            throw new Error()
     }
 }
 export default numReducer;

@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
-import numReducer from './Reducer';
+import numReducer from './Reducer.js';
 
-function Child_2(){
+function Child2(){
     const [state, dispatch]=useReducer(numReducer,6)
     return (
         <div>
@@ -13,4 +13,4 @@ function Child_2(){
         </div>
     )
 }
-export default Child_2;
+export default Child2;
