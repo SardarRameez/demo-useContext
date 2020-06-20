@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Parent from './Parent.js';
+import valueContext from './Context';
 
 function App() {
+  let value=useState(6)
   return (
-    <Parent></Parent>
+    <valueContext.Provider value={value}>
+      In App component
+        <Parent></Parent>
+    </valueContext.Provider>
   );
 }
 
